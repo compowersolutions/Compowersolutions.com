@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Compower Solutions</title>
+  <meta name="description" content="Compower Solutions — Power, Telecom & Energy services. Coming soon." />
+  <style>
+    :root { --accent:#0b6b3a; --muted:#666; --bg:#f7f7f8; --max:1100px; }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;color:#1a1a1a;background:var(--bg);line-height:1.4}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    header img{height:56px}
+    .hero{background:#fff;border-radius:10px;padding:32px;box-shadow:0 8px 28px rgba(12,12,12,0.06);text-align:center}
+    h1{margin:0 0 8px;font-size:clamp(26px,4vw,34px)}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .event-box{display:inline-block;padding:12px 18px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#138a52);color:#fff;font-weight:600}
+    .actions{display:flex;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+    .button{padding:10px 16px;border-radius:8px;text-decoration:none;color:#fff;background:var(--accent);box-shadow:0 6px 16px rgba(11,107,58,0.14)}
+    .secondary{background:#eee;color:#222;box-shadow:none}
+    .info{margin-top:20px;color:var(--muted);font-size:0.95rem}
+    footer{margin-top:28px;padding:14px 0;text-align:center;color:var(--muted);font-size:.9rem}
+    .services-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+    .svc{background:#fff;padding:12px 14px;border-radius:8px;min-width:220px;max-width:260px;box-shadow:0 6px 18px rgba(8,8,8,0.04);text-align:left}
+    .svc h4{margin:0 0 8px;font-size:1rem}
+    @media(max-width:560px){
+      header img{height:48px}
+      .svc{min-width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- Replace this src with /assets/logo.png if you upload a logo into the assets folder -->
+      <img alt="Compower Solutions" src="/mnt/data/c8455b51-e7ca-42ff-bf85-4a91f42e58e0.png" />
+      <nav aria-label="top">
+        <a href="/services.html" style="color:var(--muted);text-decoration:none;font-size:.95rem">Services</a>
+      </nav>
+    </header>
+
+    <main class="hero" role="main" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Compower Solutions</h1>
+      <p class="lead">Power & telecommunication solutions — generator sales & maintenance, solar design & installation, rectifiers and telecom power systems.</p>
+
+      <div style="margin:18px 0">
+        <div class="event-box" id="eventBox">Featured at [Your Event]</div>
+      </div>
+
+      <div class="actions">
+        <a class="button" href="/services.html">Explore Services</a>
+        <a class="button secondary" href="mailto:contact@compowersolutions.com">Contact Us</a>
+      </div>
+
+      <div class="info" style="margin-top:22px">
+        <strong>Quick launch page</strong> — this site is live for the event. Want this page updated with your full site after the event? I can prepare it for you.
+      </div>
+
+      <div class="services-row" aria-hidden="false">
+        <div class="svc"><h4>Generator Sales & Maintenance</h4><div style="color:var(--muted);font-size:.95rem">Sales, ATS integration, servicing and spare parts</div></div>
+        <div class="svc"><h4>Solar Design & Installation</h4><div style="color:var(--muted);font-size:.95rem">PV systems, battery storage & commissioning</div></div>
+        <div class="svc"><h4>Rectifier Supply</h4><div style="color:var(--muted);font-size:.95rem">DC power systems for telecom & industrial sites</div></div>
+        <div class="svc"><h4>Telecom Installation</h4><div style="color:var(--muted);font-size:.95rem">BTS power, towers and maintenance</div></div>
+      </div>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Compower Solutions · <a href="mailto:contact@compowersolutions.com">contact@compowersolutions.com</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // small niceties
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // If you want a custom event name or date in the event box, update eventBox.textContent here
+    // document.getElementById('eventBox').textContent = "Launching at Renewable Energy Expo — Tomorrow";
+  </script>
+</body>
+</html>
