@@ -3,78 +3,78 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Compower Solutions</title>
-  <meta name="description" content="Compower Solutions — Power, Telecom & Energy services. Coming soon." />
-  <style>
-    :root { --accent:#0b6b3a; --muted:#666; --bg:#f7f7f8; --max:1100px; }
-    *{box-sizing:border-box}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;color:#1a1a1a;background:var(--bg);line-height:1.4}
-    .wrap{max-width:var(--max);margin:0 auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    header img{height:56px}
-    .hero{background:#fff;border-radius:10px;padding:32px;box-shadow:0 8px 28px rgba(12,12,12,0.06);text-align:center}
-    h1{margin:0 0 8px;font-size:clamp(26px,4vw,34px)}
-    p.lead{color:var(--muted);margin:0 0 18px}
-    .event-box{display:inline-block;padding:12px 18px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#138a52);color:#fff;font-weight:600}
-    .actions{display:flex;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap}
-    .button{padding:10px 16px;border-radius:8px;text-decoration:none;color:#fff;background:var(--accent);box-shadow:0 6px 16px rgba(11,107,58,0.14)}
-    .secondary{background:#eee;color:#222;box-shadow:none}
-    .info{margin-top:20px;color:var(--muted);font-size:0.95rem}
-    footer{margin-top:28px;padding:14px 0;text-align:center;color:var(--muted);font-size:.9rem}
-    .services-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
-    .svc{background:#fff;padding:12px 14px;border-radius:8px;min-width:220px;max-width:260px;box-shadow:0 6px 18px rgba(8,8,8,0.04);text-align:left}
-    .svc h4{margin:0 0 8px;font-size:1rem}
-    @media(max-width:560px){
-      header img{height:48px}
-      .svc{min-width:100%}
-    }
-  </style>
+  <title>Copower Africa — Home</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <!-- Replace this src with /assets/logo.png if you upload a logo into the assets folder -->
-      <img alt="Compower Solutions" src="/mnt/data/c8455b51-e7ca-42ff-bf85-4a91f42e58e0.png" />
-      <nav aria-label="top">
-        <a href="/services.html" style="color:var(--muted);text-decoration:none;font-size:.95rem">Services</a>
+  <header class="site-header">
+    <div class="container">
+      <img id="logo" src="/assets/logo.png" alt="Copower Africa Logo" />
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/register.html">Register</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/download.html">Download</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main class="hero" role="main" aria-labelledby="hero-heading">
-      <h1 id="hero-heading">Compower Solutions</h1>
-      <p class="lead">Power & telecommunication solutions — generator sales & maintenance, solar design & installation, rectifiers and telecom power systems.</p>
-
-      <div style="margin:18px 0">
-        <div class="event-box" id="eventBox">Featured at [Your Event]</div>
+  <main>
+    <!-- Carousel -->
+    <section class="carousel-wrap">
+      <div class="carousel" id="carousel">
+        <div class="slide"><img src="/assets/slide1.jpg" alt="Solar panels" loading = "lazy" /></div>
+        <div class="slide"><img src="/assets/slide2.jpg" alt="Solar rooftop" loading - "lazy" /></div>
+        <div class="slide"><img src="/assets/slide3.jpg" alt="Generator" /></div>
+        <div class="slide"><img src="/assets/slide4.jpg" alt="Off-grid solar" /></div>
       </div>
-
-      <div class="actions">
-        <a class="button" href="/services.html">Explore Services</a>
-        <a class="button secondary" href="mailto:contact@compowersolutions.com">Contact Us</a>
+      <div class="carousel-controls">
+        <button id="prev">‹</button>
+        <button id="next">›</button>
       </div>
+    </section>
 
-      <div class="info" style="margin-top:22px">
-        <strong>Quick launch page</strong> — this site is live for the event. Want this page updated with your full site after the event? I can prepare it for you.
-      </div>
+    <!-- Services -->
+    <section class="services container" id="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service">
+          <section class="services container" id="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <a class="service" href="/services.html#svc-generator" aria-label="Generator Sales and Maintenance">
+      <h3>Generator Sales & Maintenance</h3>
+      <p>Supply, installation and preventive/corrective maintenance for diesel & gas generators.</p>
+    </a>
 
-      <div class="services-row" aria-hidden="false">
-        <div class="svc"><h4>Generator Sales & Maintenance</h4><div style="color:var(--muted);font-size:.95rem">Sales, ATS integration, servicing and spare parts</div></div>
-        <div class="svc"><h4>Solar Design & Installation</h4><div style="color:var(--muted);font-size:.95rem">PV systems, battery storage & commissioning</div></div>
-        <div class="svc"><h4>Rectifier Supply</h4><div style="color:var(--muted);font-size:.95rem">DC power systems for telecom & industrial sites</div></div>
-        <div class="svc"><h4>Telecom Installation</h4><div style="color:var(--muted);font-size:.95rem">BTS power, towers and maintenance</div></div>
-      </div>
-    </main>
+    <a class="service" href="/services.html#svc-solar" aria-label="Solar Design Supply and Installation">
+      <h3>Solar Design, Supply & Installation</h3>
+      <p>Site assessment, system design, panels, inverters, batteries and professional installation.</p>
+    </a>
 
-    <footer>
-      <div>© <span id="year"></span> Compower Solutions · <a href="mailto:contact@compowersolutions.com">contact@compowersolutions.com</a></div>
-    </footer>
+    <a class="service" href="/services.html#svc-rectifier" aria-label="Rectifier Supply and Installation">
+      <h3>Rectifier Supply & Installation</h3>
+      <p>Rectifier systems and DC power solutions for telecom and industrial sites, with testing & commissioning.</p>
+    </a>
+
+    <a class="service" href="/services.html#svc-telecom" aria-label="Telecommunication Installation and Maintenance">
+      <h3>Telecommunication Installation & Maintenance</h3>
+      <p>Installation and maintenance of telecom power systems, towers, BTS power solutions and backup systems.</p>
+    </a>
   </div>
+</section>
 
-  <script>
-    // small niceties
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // If you want a custom event name or date in the event box, update eventBox.textContent here
-    // document.getElementById('eventBox').textContent = "Launching at Renewable Energy Expo — Tomorrow";
-  </script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Copower Africa | <a href="mailto:contact@compowerafrica.com">contact@compowerafrica.com</a></p>
+    </div>
+  </footer>
+
+  <script src="/scripts.js"></script>
 </body>
 </html>
